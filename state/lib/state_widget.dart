@@ -10,11 +10,11 @@ class StateWidget<T extends Logic> extends StatefulWidget {
   final bool public;
 
   const StateWidget({
-    super.key,
+    Key? key,
     required this.logic,
     required this.builder,
     this.public = true,
-  });
+  }) : super(key: key);
 
   @override
   State<StateWidget<T>> createState() => _StateWidgetState<T>();
