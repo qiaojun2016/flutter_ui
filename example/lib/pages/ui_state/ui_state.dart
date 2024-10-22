@@ -5,6 +5,7 @@ import 'b/page.dart';
 import 'c/page.dart';
 import 'd/page.dart';
 import 'e/page.dart';
+import 'event/page.dart';
 
 class UIStateExample extends StatelessWidget {
   const UIStateExample({super.key});
@@ -77,17 +78,17 @@ class UIStateExample extends StatelessWidget {
               );
             },
           ),
-          /*ListTile(
-            title: const Text("跨组件通信"),
+          ListTile(
+            title: const Text("订阅事件通信"),
             onTap: (){
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (BuildContext context) => const FPage(),
+                  builder: (BuildContext context) => const EventPage(),
                 ),
               );
             },
-          ),*/
+          ),
           /*const ListTile(
             title: Text("跨页面通信"),
           ),*/

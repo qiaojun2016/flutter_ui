@@ -1,7 +1,6 @@
+import 'package:example/pages/ui_state/ui_state.dart';
 import 'package:flutter/material.dart';
-import 'package:ui_adapt_box/ui_adapt_box.dart';
 
-import 'pages/ui_adapt.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const UiAdaptBoxExample(),
+      home: MyHomePage(),
     );
   }
 }
@@ -39,14 +38,23 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("ui example"),
       ),
       body: ListView(
-        children: const [
-          ListTile(
+        children: [
+         const ListTile(
             title: Text("banner"),
           ),
-          ListTile(
+         const  ListTile(
             title: Text("panel"),
           ),
           ListTile(
+            onTap: () {
+                 Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const UIStateExample(),
+                ),
+              );
+            
+            },
             title: Text("state"),
           ),
         ],

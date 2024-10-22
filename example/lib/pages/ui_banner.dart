@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_banner/ui_banner.dart';
 
+
 class UIBannerExample extends StatelessWidget {
   const UIBannerExample({super.key});
 
@@ -13,8 +14,8 @@ class UIBannerExample extends StatelessWidget {
       ),
       body: const AspectRatio(
         aspectRatio: 1,
-        child: UIBanner(
-          child: [
+        child: UiBanner(
+          children: [
             Text("1"),
             Text("2"),
             Text("3"),
