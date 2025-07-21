@@ -12,9 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   device:
-    git:
-      url: https://github.com/clong1995/flutter_ui.git
-      path: device
+    path: ../device
 
 dev_dependencies:
   flutter_test:
