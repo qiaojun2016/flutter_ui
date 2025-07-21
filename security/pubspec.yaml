@@ -14,7 +14,7 @@ dependencies:
   crypto: ^3.0.6
   encrypt: ^5.0.3
   guid:
-    path: guid
+    path: ../guid
 
 dev_dependencies:
   flutter_test:
